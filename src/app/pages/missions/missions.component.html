@@ -1,0 +1,26 @@
+<section class="container" fxFlex fxLayout="column" fxLayoutAlign="center center">
+    <app-mission-header [image]="image" [title]="title" [titleBold]="titleBold" [text]="text" [bg]="bg"></app-mission-header>
+
+    <article fxLayout="column" fxLayoutGap="grid">
+        <div fxLayout="row" fxLayout.xs="column" class="text">
+            <p>{{ p1 }} {{ p2 }}</p>
+
+            <p>{{ p3 }} {{ p4 }}</p>
+        </div>
+    </article>
+    <article *ngFor="let card of cards" class="card-container">
+        <div class="card" style="background-image: url('{{card.bg}}');  object-fit:cover; background-size: 100%; background-repeat: no-repeat;">
+            <div class="card-linear">
+                <div class="card-info">
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.content }}</p>
+                    <button [routerLink]="card.lien" class="step-green">voir plus</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <app-questions></app-questions>
+
+    <app-partners></app-partners>
+</section>
