@@ -63,6 +63,7 @@ app-metiers-items-header {
     height: 50px;
     border: transparent solid 1px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .remain-card {

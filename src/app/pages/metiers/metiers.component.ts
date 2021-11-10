@@ -35,40 +35,49 @@ export class MetiersComponent implements OnInit {
 
   gridColumns = 3;
 
+
+
   contents = [
     { img: '../../../assets/solutions/formations.jpg', 
       title:"Flux Documentaires", 
-      text:"Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion."
+      text:"Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion.",
+      link:'flux-documentaire'
     },
 
     { img: '../../../assets/solutions/studio.jpg', 
       title:"Studio de Développement", 
-      text:"Logiciels web éco-conçus pour des solutions informatiques sur mesure (développement web, système d’information, hébergement, base de données, applications …)"
+      text:"Logiciels web éco-conçus pour des solutions informatiques sur mesure (développement web, système d’information, hébergement, base de données, applications …)",
+      link:'studio'
     },
 
     { img: '../../../assets/solutions/atelier.jpg', 
       title:"L'atelier Numérique", 
-      text:"Pour des services de maintenance et d’assistance informatique ou du matériel informatique reconditionné." 
+      text:"Pour des services de maintenance et d’assistance informatique ou du matériel informatique reconditionné." ,
+      link:'atelier-numerique'
     },
 
     { img: '../../../assets/solutions/livraison.jpg', 
       title:"Livraison Urbaine", 
-      text:"Petite logistique - Livraison Urbaine : dernier kilomètre en vélo cargo de palettes et colis, ramassage de bio déchets. distribution, livraison triporteur et collecte de proximité. " 
+      text:"Petite logistique - Livraison Urbaine : dernier kilomètre en vélo cargo de palettes et colis, ramassage de bio déchets. distribution, livraison triporteur et collecte de proximité. " ,
+      link:'livraison'
     },
 
     { img: '../../../assets/solutions/service_post.jpg', 
       title:"Service Postal", 
-      text:"Premier opérateur postal alternatif de Nouvelle Aquitaine ; Collecte, remise et distribution de courrier et de recommandé sur Pau"
+      text:"Premier opérateur postal alternatif de Nouvelle Aquitaine ; Collecte, remise et distribution de courrier et de recommandé sur Pau",
+      link:'service-postal'
     },
 
     { img: '../../../assets/solutions/concierge.jpg', 
       title:"Conciergerie d'Entreprise", 
-      text:"(être) au bureau comme à la maison, avec la Conciergerie Solidaire. Améliorer la vie de l'entreprise. "
+      text:"(être) au bureau comme à la maison, avec la Conciergerie Solidaire. Améliorer la vie de l'entreprise. ",
+      link:'conciergerie'
   },
 
   { img: '../../../assets/solutions/formations.jpg', 
     title:"Formations", 
-    text:"Formation et inclusion numérique : courte ou longue, formation numérique, digitale pour lutter contre la fracture numérique et promouvoir l’emploi durable"
+    text:"Formation et inclusion numérique : courte ou longue, formation numérique, digitale pour lutter contre la fracture numérique et promouvoir l’emploi durable",
+    link:'formations'
   },
 
   ];

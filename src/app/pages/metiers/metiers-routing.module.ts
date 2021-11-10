@@ -16,7 +16,7 @@ import { StudioComponent } from './studio/studio.component';
       {path: 'flux-documentaire', component: FluxDocComponent},
       {path: 'atelier-numerique', component: AtelierComponent},
       {path: 'conciergerie', component: ConciergerieComponent},
-      {path: 'partenaires-entreprise', component: StudioComponent},
+      {path: 'studio', component: StudioComponent},
       {path: 'service-postal', component: ServicePostalComponent},
       {path: 'livraison', component: LivraisonComponent},
       {path: 'formations', component: FormationComponent},

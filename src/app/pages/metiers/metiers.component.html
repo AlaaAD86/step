@@ -14,9 +14,7 @@
                             <p>
                                 {{ content.text }}
                             </p>
-                            <button href="https://www.step-sa.fr/ " target="_blank " class="info">
-                voir plus
-              </button>
+                            <button routerLink={{content.link}} class="info">voir plus</button>
                         </mat-card-content>
                     </mat-card>
                 </div>
@@ -56,11 +54,6 @@
     </button>
     </div>
 
-
-    <app-prestations-carousel></app-prestations-carousel>
-
-
-    <app-metier-details-header></app-metier-details-header>
 
     <app-questions></app-questions>
 
