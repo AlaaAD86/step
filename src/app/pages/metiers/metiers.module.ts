@@ -52,6 +52,6 @@ const routes: Routes = [
     SharedModule,
     MetiersRoutingModule,
     RouterModule.forChild(routes)
-  ]
+  ],
 })
 export class MetiersModule { }

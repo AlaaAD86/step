@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IprestationsCarousel } from 'src/app/interfaces/iprestations-carousel';
+import { PrestationsCarouselService } from 'src/app/services/prestations-carousel.service';
 
 @Component({
   selector: 'app-flux-doc',
@@ -6,9 +8,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flux-doc.component.css'],
 })
 export class FluxDocComponent implements OnInit {
-  constructor() {}
 
-  ngOnInit(): void {}
+  slides: IprestationsCarousel[] = []
+
+  constructor(private prestationServ: PrestationsCarouselService) {}
+
+  ngOnInit(): void {
+    this.prestationServ.getPrestations();
+    this.slides = this.prestationServ.prestationsDetails;
+  }
+
+
+  // slides= [
+  //   {
+  //     listTitle: "Numérisation",
+  //     img: '../../../assets/solutions/formations.jpg',
+  //     title: 'Numérisation',
+  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
+  //   },
+  //   {
+  //     listTitle: 'Traitement de données',
+  //     img: '../../../assets/solutions/formations.jpg',
+  //     title: 'Traitement de données',
+  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
+  //   },
+  //   {
+  //     listTitle: 'Editique',
+  //     img: '../../../assets/solutions/formations.jpg',
+  //     title: 'Editique',
+  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
+  //   },
+  // ];
+
 
   articles = [
     {

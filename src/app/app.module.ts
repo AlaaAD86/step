@@ -25,7 +25,6 @@ import { EcoPageComponent } from './pages/eco-page/eco-page.component';
     SharedModule,
     BrowserAnimationsModule
   ],
-  providers: [],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })

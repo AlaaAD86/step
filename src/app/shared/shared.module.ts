@@ -38,6 +38,7 @@ import { NavbarComponent } from './default/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BlockComponent } from './block/block.component';
+import { PrestationsCarouselService } from '../services/prestations-carousel.service';
 
 
 const materialsModules = [
@@ -98,6 +99,9 @@ const otherModules = [
   exports: [
     materialsModules,
     components
+  ],
+  providers: [
+    PrestationsCarouselService
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })
