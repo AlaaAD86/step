@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { PrestationsCarouselService } from 'src/app/services/prestations-carousel.service';
 
 
@@ -40,6 +40,7 @@ export class PrestationsCarouselComponent implements OnInit {
   //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
   //   },
   // ];
+
 
 
 
@@ -127,5 +128,6 @@ export class PrestationsCarouselComponent implements OnInit {
   beforeChange(e: any) {
     console.log('beforeChange');
   }
+
 
 }

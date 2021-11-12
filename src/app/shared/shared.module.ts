@@ -39,6 +39,7 @@ import { RouterModule } from '@angular/router';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BlockComponent } from './block/block.component';
 import { PrestationsCarouselService } from '../services/prestations-carousel.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const materialsModules = [
@@ -83,6 +84,7 @@ const components = [
 const otherModules = [
   FlexLayoutModule,
   SlickCarouselModule,
+  HttpClientModule
 ]
 
 @NgModule({

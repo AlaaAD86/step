@@ -11,11 +11,18 @@ export class FluxDocComponent implements OnInit {
 
   slides: IprestationsCarousel[] = []
 
-  constructor(private prestationServ: PrestationsCarouselService) {}
+  constructor(public prestationServ: PrestationsCarouselService) {}
 
   ngOnInit(): void {
-    this.prestationServ.getPrestations();
-    this.slides = this.prestationServ.prestationsDetails;
+    this.prestationServ.getPrestations();    
+    //  this.prestationServ.prestationsDetails;
+
+    // this.prestationServ.getPrestations().subscribe((data:any) => {
+    //   this.slides = data
+    //   console.log("here is the data: " , this.slides);
+    // })
+
+   
   }
 
 
