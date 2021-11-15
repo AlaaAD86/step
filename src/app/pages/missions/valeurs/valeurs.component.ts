@@ -18,7 +18,8 @@ export class ValeursComponent implements OnInit {
     alt: "valeurs"
   }
 
-  image = "assets/img/half_orange.png"
+  bgImg="assets/img/office.jpg"
+  corner = "assets/corners/blue_cyan.png"
   title = "STEP, la belle histoire"
   titleBold = "Une histoire qui dure depuis 20 ans"
   text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. "

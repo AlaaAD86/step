@@ -14,9 +14,7 @@ import { LivraisonComponent } from './livraison/livraison.component';
 import { StudioComponent } from './studio/studio.component';
 import { ServicePostalComponent } from './service-postal/service-postal.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NumerisationComponent } from './flux-doc/numerisation/numerisation.component';
-import { TraitementDonneesComponent } from './flux-doc/traitement-donnees/traitement-donnees.component';
-import { EditiqueComponent } from './flux-doc/editique/editique.component';
+
 import { ApplicationsMetiersComponent } from './studio/applications-metiers/applications-metiers.component';
 import { ApplicationsMobilesComponent } from './studio/applications-mobiles/applications-mobiles.component';
 import { ApplicationsWebComponent } from './studio/applications-web/applications-web.component';
@@ -37,9 +35,9 @@ const routes: Routes = [
     LivraisonComponent,
     StudioComponent,
     ServicePostalComponent,
-    NumerisationComponent,
-    TraitementDonneesComponent,
-    EditiqueComponent,
+    // NumerisationComponent,
+    // TraitementDonneesComponent,
+    // EditiqueComponent,
     ApplicationsMetiersComponent,
     ApplicationsMobilesComponent,
     ApplicationsWebComponent,

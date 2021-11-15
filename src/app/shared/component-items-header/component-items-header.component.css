@@ -29,6 +29,10 @@
     height: 400px;
 }
 
+.corner img {
+    width: 100%;
+}
+
 h3,
 p,
 span {

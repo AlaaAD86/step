@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EcoPageComponent } from './pages/eco-page/eco-page.component';
 import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   { path: 'accueil', loadChildren: () => import('./pages/accueil/accueil.module').then(m => m.AccueilModule) },

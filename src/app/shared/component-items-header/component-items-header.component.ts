@@ -8,10 +8,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ComponentItemsHeaderComponent implements OnInit {
     
-  @Input() image: string = 'default';
+  @Input() corner: string = 'assets/corners/orange_white.png';
   @Input() title: string = 'default';
   @Input() titleBold: string = 'default';
   @Input() text: string = 'default';
+  @Input() bgImg: string = 'assets/img/flux_doc.jpg';
  
 
 

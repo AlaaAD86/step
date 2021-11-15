@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 export interface Content {
@@ -28,7 +29,7 @@ export class MetiersComponent implements OnInit {
   metierTitleBold="Le metier de l'avenir" 
   metierText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. " 
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

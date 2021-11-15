@@ -3,4 +3,5 @@ export interface IprestationsCarousel {
     img: string,
     title: string,
     text: string,
+    buttonLink: string,
 }

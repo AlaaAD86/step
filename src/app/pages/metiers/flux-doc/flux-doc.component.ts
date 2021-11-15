@@ -8,24 +8,27 @@ import { PrestationsCarouselService } from 'src/app/services/prestations-carouse
   styleUrls: ['./flux-doc.component.css'],
 })
 export class FluxDocComponent implements OnInit {
-
-  slides: IprestationsCarousel[] = []
+  
+  slides: IprestationsCarousel[] = [];
 
   constructor(public prestationServ: PrestationsCarouselService) {}
 
   ngOnInit(): void {
-    this.prestationServ.getPrestations();    
+    this.prestationServ.getPrestations();
     //  this.prestationServ.prestationsDetails;
 
     // this.prestationServ.getPrestations().subscribe((data:any) => {
     //   this.slides = data
     //   console.log("here is the data: " , this.slides);
     // })
-
-   
   }
 
+  // -- app-component-items-header --
+  title = 'Flux Documentaires';
+  titleBold = "Flux Documentaires";
+  text = "La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !";
 
+  // -- app-prestations-carousel --
   // slides= [
   //   {
   //     listTitle: "Numérisation",
@@ -46,7 +49,6 @@ export class FluxDocComponent implements OnInit {
   //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
   //   },
   // ];
-
 
   articles = [
     {
@@ -80,7 +82,8 @@ Le service Flux Documentaires de STEP, c’est 11 personnes : 6 opérateurs, 4 c
 
     {
       icon: '/assets/svg/stack.svg',
-      titre: 'Une ingénierie dédiée à chaque projet de numérisation',
+      titre: 'Une ingénierie dédiée',
+      // titre: 'Une ingénierie dédiée à chaque projet de numérisation',
       accroche:
         'Un expert de la capture d’image sur des supports très variés à votre service',
       column: `Expert de la capture d’image sur des supports très variés (dossiers de gestion ou techniques, microformes, plans & cartes, documents patrimoniaux…), STEP a développé également une forte expertise dans la gestion de projets et le traitement de données de flux documentaires.

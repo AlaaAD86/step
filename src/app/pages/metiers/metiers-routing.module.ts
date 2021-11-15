@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { AtelierComponent } from './atelier/atelier.component';
 import { ConciergerieComponent } from './conciergerie/conciergerie.component';
 import { FluxDocComponent } from './flux-doc/flux-doc.component';
+
 import { FormationComponent } from './formation/formation.component';
 import { LivraisonComponent } from './livraison/livraison.component';
 import { MetiersComponent } from './metiers.component';
@@ -13,7 +15,7 @@ import { StudioComponent } from './studio/studio.component';
   const routes: Routes = [
     {path: '', children: [
       {path: '', component: MetiersComponent},
-      {path: 'flux-documentaire', component: FluxDocComponent},
+      {path: 'flux-documentaire', component:FluxDocComponent, loadChildren: ()=> import('./flux-doc/flux-doc.module').then(m => m.FluxDocModule)},
       {path: 'atelier-numerique', component: AtelierComponent},
       {path: 'conciergerie', component: ConciergerieComponent},
       {path: 'studio', component: StudioComponent},
@@ -23,8 +25,6 @@ import { StudioComponent } from './studio/studio.component';
     ]},
   
   ];
-
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

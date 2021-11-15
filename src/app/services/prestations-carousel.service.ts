@@ -7,45 +7,30 @@ import { IprestationsCarousel } from '../interfaces/iprestations-carousel';
 })
 export class PrestationsCarouselService {
 
-
-
-
   prestationsDetails: IprestationsCarousel[] = [];
- 
-  constructor(private httpService:HttpClient) { }
-  // constructor() { }
+
+  constructor(private httpService: HttpClient) { }
 
   getPrestations() {
-    this.httpService.get('http://localhost:4200/assets/data/prestations-carousel.json').subscribe((data:any) => {
+    this.httpService.get('http://localhost:4200/assets/data/prestations-carousel-fluxdoc.json').subscribe((data: any) => {
       this.prestationsDetails = data;
-    console.log("data", this.prestationsDetails);
+      console.log("data", this.prestationsDetails);
+    });
+  }
 
-    })
-      
-        
-  
-
-//     this.prestationsDetails =  [{
-//       "listTitle": "Numérisation",
-//       "img": "../../../assets/solutions/formations.jpg",
-//       "title": "Numérisation",
-//       "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion"
-//   },
-//   {
-//       "listTitle": "Traitement de données",
-//       "img": "../../../assets/solutions/formations.jpg",
-//       "title": "Traitement de données",
-//       "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion"
-//   },
-//   {
-//       "listTitle": "Editique",
-//       "img": "../../../assets/solutions/formations.jpg",
-//       "title": "Editique",
-//       "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion"
-//   }
-// ]
+  getPrestationsStudio() {
+    this.httpService.get('http://localhost:4200/assets/data/prestations-carousel-studio.json').subscribe((data: any) => {
+      this.prestationsDetails = data;
+      console.log("data", this.prestationsDetails);
+    });
   }
 
 
-  
-}
+  getPrestationsAtelier() {
+    this.httpService.get('http://localhost:4200/assets/data/prestations-carousel-atelier.json').subscribe((data: any) => {
+      this.prestationsDetails = data;
+      console.log("data", this.prestationsDetails);
+    });
+  }
+
+  }

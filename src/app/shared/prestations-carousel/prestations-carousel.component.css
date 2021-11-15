@@ -58,6 +58,12 @@ ul li button {
     height: 40px;
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
 }
 
 p {
@@ -155,16 +161,16 @@ h5 {
     font-size: 0.9rem;
 }
 
-button {
+.btn-carousel {
     color: white;
-    font-family: 'Rubik', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    width: 180px;
-    height: 60px;
-    border: transparent solid 1px;
+    width: 60%;
+    height: 50PX;
+    padding: 2%;
+    /* border: transparent solid 1px; */
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -228,6 +234,10 @@ button {
         margin: 0.1rem;
         padding: 5px 20px 5px 10px;
     }
+    ul li button {
+        width: 110%;
+        height: 40px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -286,9 +296,15 @@ button {
         font-weight: 500;
         margin-bottom: -0px !important;
     }
-    button {
-        font-size: 16px;
-        width: 120px;
-        height: 40px;
+    .btn-carousel {
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        width: 60%;
+        height: 50PX;
+        /* border: transparent solid 1px; */
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-top: 20px;
     }
 }
