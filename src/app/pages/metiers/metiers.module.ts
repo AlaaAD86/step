@@ -15,11 +15,16 @@ import { StudioComponent } from './studio/studio.component';
 import { ServicePostalComponent } from './service-postal/service-postal.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { ApplicationsMetiersComponent } from './studio/applications-metiers/applications-metiers.component';
 import { ApplicationsMobilesComponent } from './studio/applications-mobiles/applications-mobiles.component';
 import { ApplicationsWebComponent } from './studio/applications-web/applications-web.component';
 import { MaterielReemploiComponent } from './atelier/materiel-reemploi/materiel-reemploi.component';
 import { AssistanceComponent } from './atelier/assistance/assistance.component';
+import { MetierComponent } from './metier/metier.component';
+import { NumerisationComponent } from './flux-doc/numerisation/numerisation.component';
+import { TraitementDonneesComponent } from './flux-doc/traitement-donnees/traitement-donnees.component';
+import { EditiqueComponent } from './flux-doc/editique/editique.component';
+import { CourtesComponent } from './formation/courtes/courtes.component';
+import { LonguesComponent } from './formation/longues/longues.component';
 
 const routes: Routes = [
   { path: '', component: MetiersComponent }
@@ -35,14 +40,16 @@ const routes: Routes = [
     LivraisonComponent,
     StudioComponent,
     ServicePostalComponent,
-    // NumerisationComponent,
-    // TraitementDonneesComponent,
-    // EditiqueComponent,
-    ApplicationsMetiersComponent,
+    NumerisationComponent,
+    TraitementDonneesComponent,
+    EditiqueComponent,
     ApplicationsMobilesComponent,
     ApplicationsWebComponent,
     MaterielReemploiComponent,
-    AssistanceComponent
+    AssistanceComponent,
+    MetierComponent,
+    CourtesComponent,
+    LonguesComponent
   ],
   imports: [
     FlexLayoutModule,

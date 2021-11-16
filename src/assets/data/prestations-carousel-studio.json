@@ -3,7 +3,7 @@
         "img": "../../../assets/solutions/formations.jpg",
         "title": "Applications Web",
         "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
-        "buttonLink": "/numerisation"
+        "buttonLink": "/metiers/studio/applications-web"
 
     },
     {
@@ -11,7 +11,7 @@
         "img": "../../../assets/solutions/formations.jpg",
         "title": "Applications Mobiles",
         "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
-        "buttonLink": "/traitement-de-donnees"
+        "buttonLink": "/metiers/studio/applications-mobiles"
 
     }
 ]

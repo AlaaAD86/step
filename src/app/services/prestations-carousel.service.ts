@@ -33,4 +33,11 @@ export class PrestationsCarouselService {
     });
   }
 
+
+  getPrestationsFormations() {
+    this.httpService.get('http://localhost:4200/assets/data/prestations-carousel-formations.json').subscribe((data: any) => {
+      this.prestationsDetails = data;
+      console.log("data", this.prestationsDetails);
+    });
+  }
   }

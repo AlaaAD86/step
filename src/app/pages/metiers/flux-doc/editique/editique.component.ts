@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IprestationsCarousel } from 'src/app/interfaces/iprestations-carousel';
-import { PrestationsCarouselService } from 'src/app/services/prestations-carousel.service';
+
 
 @Component({
   selector: 'app-editique',
@@ -9,12 +8,15 @@ import { PrestationsCarouselService } from 'src/app/services/prestations-carouse
 })
 export class EditiqueComponent implements OnInit {
 
-  slides: IprestationsCarousel[] = []
+ 
 
-  constructor(public prestationServ: PrestationsCarouselService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.prestationServ.getPrestations();    
+     
   }
-
+  picto="assets/svg/stack.svg" ;
+  title="Editique" ;
+  text="Flux entrants ou sortants, on s’occupe de tout !"; 
+  bg="assets/metiers/flux-doc/flux_doc_5.jpg";
 }

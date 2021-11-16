@@ -25,10 +25,12 @@ li {
 a {
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }
 
 a:hover {
     text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 .material-icons {

@@ -12,4 +12,9 @@ export class NumerisationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  picto="assets/svg/stack.svg";
+  title="Numérisation";
+   text="La conservation et le partage de documents patrimoniaux";
+    bg="assets/metiers/flux-doc/flux_doc_6.jpg"
+
 }

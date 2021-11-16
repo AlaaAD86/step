@@ -3,7 +3,7 @@
         "img": "../../../assets/solutions/formations.jpg",
         "title": "Numérisation",
         "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
-        "buttonLink": "/numerisation"
+        "buttonLink": "/metiers/flux-documentaire/numerisation"
 
     },
     {
@@ -11,7 +11,7 @@
         "img": "../../../assets/solutions/formations.jpg",
         "title": "Traitement de données",
         "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
-        "buttonLink": "/traitement-de-donnees"
+        "buttonLink": "/metiers/flux-documentaire/traitement-de-donnees"
 
     },
     {
@@ -19,7 +19,7 @@
         "img": "../../../assets/solutions/formations.jpg",
         "title": "Editique",
         "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
-        "buttonLink": "/editique"
+        "buttonLink": "/metiers/flux-documentaire/editique"
 
     }
 ]

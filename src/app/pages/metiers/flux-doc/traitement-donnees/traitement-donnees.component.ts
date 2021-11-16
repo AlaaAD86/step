@@ -11,5 +11,8 @@ export class TraitementDonneesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  picto="assets/svg/stack.svg";
+   title="Traitement de données";
+    text="La conservation et le partage de documents patrimoniaux";
+     bg="assets/metiers/flux-doc/flux_doc_4.jpg"
 }

@@ -5,10 +5,6 @@
 
     <div fxFlex fxLayout="row" fxLayoutAlign="end center">
         <ul fxLayout="row" fxLayoutAlign="space-around center" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" fxLayoutGap="18px" class="navigation-items">
-            <!-- <li *ngFor="let lien of liens" fxLayoutGap="18px">
-                <a class="step-blue-color" [routerLink]="[lien.routerLink]">
-                    {{lien.name}}</a>
-            </li> -->
 
             <li *ngFor="let lien of liens" fxLayoutGap="18px">
                 <a class="step-blue-color" (click)="navto(lien.routerLink)">
