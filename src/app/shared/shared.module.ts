@@ -40,6 +40,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BlockComponent } from './block/block.component';
 import { PrestationsCarouselService } from '../services/prestations-carousel.service';
 import { HttpClientModule } from '@angular/common/http';
+import { MetiersDetailsHeadersService } from '../services/metiers-details-headers.service';
 
 
 const materialsModules = [
@@ -103,7 +104,8 @@ const otherModules = [
     components
   ],
   providers: [
-    PrestationsCarouselService
+    PrestationsCarouselService,
+    MetiersDetailsHeadersService
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })

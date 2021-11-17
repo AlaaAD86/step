@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MetiersDetailsHeadersService } from 'src/app/services/metiers-details-headers.service';
 
 @Component({
   selector: 'app-materiel-reemploi',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterielReemploiComponent implements OnInit {
 
-  constructor() { }
+  constructor(public metierDetailsHeadersServ:MetiersDetailsHeadersService) { }
 
   ngOnInit(): void {
+    this.metierDetailsHeadersServ.getMateriels();
   }
+
+
 
 }

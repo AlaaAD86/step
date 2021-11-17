@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IMetierDetailsHeaders } from 'src/app/interfaces/imetier-details-headers';
+import { MetiersDetailsHeadersService } from 'src/app/services/metiers-details-headers.service';
 
 @Component({
   selector: 'app-numerisation',
@@ -7,14 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumerisationComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public metierDetailsHeadersServ:MetiersDetailsHeadersService) { }
 
   ngOnInit(): void {
+    this.metierDetailsHeadersServ.getNumerisation();
   }
-
-  picto="assets/svg/stack.svg";
-  title="Numérisation";
-   text="La conservation et le partage de documents patrimoniaux";
-    bg="assets/metiers/flux-doc/flux_doc_6.jpg"
 
 }

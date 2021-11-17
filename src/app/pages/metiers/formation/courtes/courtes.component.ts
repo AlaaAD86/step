@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IMetierDetailsHeaders } from 'src/app/interfaces/imetier-details-headers';
+import { MetiersDetailsHeadersService } from 'src/app/services/metiers-details-headers.service';
 
 @Component({
   selector: 'app-courtes',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourtesComponent implements OnInit {
 
-  constructor() { }
+  formations: IMetierDetailsHeaders[] = [];
+
+  constructor(public metierDetailsHeadersServ:MetiersDetailsHeadersService) { }
 
   ngOnInit(): void {
+    this.metierDetailsHeadersServ.getFormationsCourtes();
   }
 
 }
