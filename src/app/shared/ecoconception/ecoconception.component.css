@@ -1,3 +1,8 @@
+section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .img-container {
     height: 500px;
     width: 500px;
@@ -61,6 +66,13 @@ h3 {
     font-size: 18px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    border-top: solid 2px #edecf1;
 }
 
 @media only screen and (max-width: 1440px) {
